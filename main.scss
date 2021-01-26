@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .claus-container {
+    width: 100vw;
+    height: 100vh;
+    background: #061A27;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+    .claus-content {
+      width: 220px;
+      height: 220px;
+      border: 10px inset #E01931;
+      box-shadow: inset 0 0 40px #E01931;
+      border-radius: 50%;
+      position: absolute;
+      animation: rotate 1s infinite;
+    }
+  
+    .claus {
+      width: 300px;
+      height: 203px;
+      background: transparent url('img/spritesheet.png') 0 0 no-repeat;
+      position: absolute;
+      animation: run 1s steps(13) infinite;
+      left: 50%;
+      top: 50%;
+      transform: translate(-40%, -50%);
+    }
+  
+    h2 {
+      color: #fff;
+      text-align: center;
+      position: relative;
+      bottom: -150px;
+      letter-spacing: 10px;
+      font-family: 'Fredoka One', cursive;
+      text-shadow: 1px 1px 2px;
+      animation: txt 1s infinite steps(13);
+    }
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes run {
+    100% {
+      background-position: -3926px 0;
+    }
+  }
+  
+  @keyframes txt {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .container {
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+      color: #2d2d2d;
+    }
+  }

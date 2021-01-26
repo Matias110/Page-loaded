@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.claus-container {
+  width: 100vw;
+  height: 100vh;
+  background: #061A27;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.claus-container .claus-content {
+  width: 220px;
+  height: 220px;
+  border: 10px inset #E01931;
+  -webkit-box-shadow: inset 0 0 40px #E01931;
+          box-shadow: inset 0 0 40px #E01931;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-animation: rotate 1s infinite;
+          animation: rotate 1s infinite;
+}
+
+.claus-container .claus {
+  width: 300px;
+  height: 203px;
+  background: transparent url("img/spritesheet.png") 0 0 no-repeat;
+  position: absolute;
+  -webkit-animation: run 1s steps(13) infinite;
+          animation: run 1s steps(13) infinite;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-40%, -50%);
+          transform: translate(-40%, -50%);
+}
+
+.claus-container h2 {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  bottom: -150px;
+  letter-spacing: 10px;
+  font-family: 'Fredoka One', cursive;
+  text-shadow: 1px 1px 2px;
+  -webkit-animation: txt 1s infinite steps(13);
+          animation: txt 1s infinite steps(13);
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes run {
+  100% {
+    background-position: -3926px 0;
+  }
+}
+
+@keyframes run {
+  100% {
+    background-position: -3926px 0;
+  }
+}
+
+@-webkit-keyframes txt {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes txt {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #2d2d2d;
+}
+/*# sourceMappingURL=main.css.map */
