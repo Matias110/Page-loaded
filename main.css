@@ -42,7 +42,7 @@
 .claus-container .claus {
   width: 300px;
   height: 203px;
-  background: transparent url("img/spritesheet.png") 0 0 no-repeat;
+  background: transparent url("img/jumpclaus.png") 0 0 no-repeat;
   position: absolute;
   -webkit-animation: run 1s steps(13) infinite;
           animation: run 1s steps(13) infinite;
